@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+    gap: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+    padding-top: 120px;
+}
+
+h1 {
+    color: #2d3e50;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+  h2 {
+    color: #2d3e50;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#cell {
+    width: 40px;
+    height: 40px;
+    background-color: lightblue;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hit {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+.miss {
+    background-color: pink;
+    color: red;
+}
+
+.enemy {
+    color: red;
+}
+
+.player{
+    color: blue;
+}
+
+#cell:hover {
+    background-color: lightcoral;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007BFF;
+    padding: 15px 20px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 0px;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.active {
+    font-weight: bold;
+    color: #ff0000;
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0px;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .main-content {
+        padding-top: 120px;  
+    }
+
+    .navbar a {
+        padding: 0px;
+        width: 100%;
+    }
+}
