@@ -48,12 +48,12 @@ h1 {
 }
 
 .hit {
-    background-color: lightgreen;
+    background-color: lightgreen !important;
     color: darkgreen;
 }
 
 .miss {
-    background-color: pink;
+    background-color: pink !important;
     color: red;
 }
 
